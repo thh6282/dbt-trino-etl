@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: appdata
+    database: appdata
+    schema: dbo 
+    tables:
+      - name: MPLDeliveryManager
+      - name: MPLDeliveryPreLoad
+      - name: WH_Location
+  - name: exact101
+    database: exact101
+    schema: dbo
+    tables:
+      - name: magaz  
