@@ -14,3 +14,4 @@ select
     '{{ var("load_date") }}' AS load_date,
     CAST(CURRENT_TIMESTAMP AS timestamp(6)) AS ppn_tm
 from appdata.dbo.appuser
+where synmodified = '{{var(etl_date)}}'
