@@ -5,3 +5,6 @@ https://docs.getdbt.com/docs/core/connect-data-platform/trino-setup
 - Incremental
 - Source of Image
 ## raw_vault
+- hub
+- link
+- satellite
