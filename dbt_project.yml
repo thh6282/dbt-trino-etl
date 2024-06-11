@@ -31,19 +31,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   train:
     # Config indicated by + and applies to all files under models/example/
-    materialized: table
-    +on_table_exists: drop
+    raw_vault:
+      +schema: raw_vault
     staging:
-      appdata:
+      +schema: staging
+      First_time:
         +enabled: False
-        +database: lakehousenessie
-        +schema: staging
-        +materialized: views 
-      exact101:
-        +enabled: False
-        +database: lakehousenessie
-        +schema: staging
-        +materialized: views
+      SourceImage:
+        +enabled: true
 
 vars:
   hash: MD5  
