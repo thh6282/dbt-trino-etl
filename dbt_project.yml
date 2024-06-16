@@ -32,6 +32,7 @@ models:
   train:
     # Config indicated by + and applies to all files under models/example/
     raw_vault:
+      +enabled: true
       +schema: raw_vault
     staging:
       +schema: staging
@@ -41,6 +42,4 @@ models:
         +enabled: true
 
 vars:
-  hash: MD5  
-  source_name: 'exact101'
-  load_date: '20240521'
+  etl_date: '20240521'
