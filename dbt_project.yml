@@ -42,4 +42,4 @@ models:
         +enabled: true
 
 vars:
-  etl_date: '20240521'
+  etl_date: '20240526'
